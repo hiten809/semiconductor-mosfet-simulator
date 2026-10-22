@@ -1,15 +1,8 @@
 
-import sys
-from pathlib import Path
-
 import pytest
 
-# Import the existing MOSFET model
-sys.path.insert(
-    0, str(Path(__file__).resolve().parents[1] / "src")
-)
-
 from src.mosfet import drain_current, MU_COX, W_OVER_L, VTH, LAMBDA
+
 
 
 def test_cutoff_region():

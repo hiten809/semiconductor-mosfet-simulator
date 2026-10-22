@@ -1,14 +1,9 @@
-import sys
-from pathlib import Path
 
 import numpy as np
 import pytest
 
-sys.path.insert(
-    0, str(Path(__file__).resolve().parents[1] / "src")
-)
-
 from src.device_model import mosfet_current
+
 
 
 def test_scalar_output():
